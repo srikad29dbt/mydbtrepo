@@ -6,7 +6,7 @@
       target_schema='CURATED_DATA',
       unique_key='order_id',
       strategy='timestamp',
-      updated_at='update_at',
+      updated_at='updated_at',
       invalidate_hard_deletes=True
     )
 }}
