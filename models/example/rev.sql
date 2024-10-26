@@ -1,4 +1,3 @@
-select prod_name, sum(quantity*unit_price) as revenue  from 
-{{source('RAW_DATA','product_stg')}} P inner join   {{source('RAW_DATA','sales_stg')}} S
+select prod_name, sum(quantity*unit_price) as revenue  from CURATED_DATA.PRODUCTS P inner join CURATED_DATA.SALES S
 on (P.prod_id=S.prod_id)
 group by prod_name
