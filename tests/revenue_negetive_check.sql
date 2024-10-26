@@ -1,2 +1,2 @@
-select * from {{ref('revenue_calc')}}
+select * from {{ref('rev')}}
 where revenue<0
